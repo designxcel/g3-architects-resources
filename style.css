@@ -73,8 +73,43 @@ nav a{
     width: 100%;
 }
 
+.team-feature{
+    max-width: 1140px;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    margin: 60px auto;
+}
 
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
+.team-content{
+    margin-left: 70px;
+}
+
+.feature-title{
+    font-size: 2.8rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.our-span{
+    color: #131313;
+    font-weight: 700;
+}
+
+.feature-span{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.feature-desc{
+    color: grey;
+}
 /* responsive queries */
 
 @media screen and (max-width:576px){
@@ -84,6 +119,18 @@ nav a{
 
     nav{
         flex-direction: column;
+    }
+    .team-feature{
+        flex-direction: column;
+        
+    }
+    .team-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-content{
+        margin: 10px 20px;
+        text-align: center;
     }
 }
 
@@ -95,4 +142,5 @@ nav a{
     nav{
         flex-direction: column;
     }
+
 }
