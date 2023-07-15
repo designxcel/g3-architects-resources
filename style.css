@@ -7,7 +7,7 @@
 
 /* nav secction */
 header{
-    background-color: rgba(255, 144, 14, 0.10);
+    background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
 nav{
@@ -44,7 +44,7 @@ nav a{
 }
 .banner-content{
     margin: 0px auto;
-    width: 800px;
+    max-width: 800px;
     text-align: center;
 }
 .banner-title{
@@ -55,7 +55,7 @@ nav a{
 }
 
 .banner-desc{
-    margin-top: -30px;
+    /* margin-top: -30px; */
     color: #727272;
 }
 
@@ -65,6 +65,34 @@ nav a{
     border: none;
     border-radius: 8px;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+.banner img{
+    width: 100%;
+}
+
+
+
+/* responsive queries */
+
+@media screen and (max-width:576px){
+    header{
+        padding: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
 }
